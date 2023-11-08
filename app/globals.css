@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.removeScroll::-webkit-scrollbar {
+  display: none;
+}
+
+input:focus {
+  outline: none;
+}
+textarea:focus {
+  outline: none;
+}
+select:focus {
+  outline: none;
+}
+
+button {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ddd;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #313131;
+}
+
+.easy-button-button {
+  padding: 7px;
+}
+* {
+  box-sizing: border-box;
+}
+[data-title]:hover:after {
+  opacity: 1;
+  transition: all 0.1s ease 0.1s;
+  visibility: visible;
+  -webkit-transition: all 0.1s ease 0.1s;
+  -moz-transition: all 0.1s ease 0.1s;
+  -ms-transition: all 0.1s ease 0.1s;
+  -o-transition: all 0.1s ease 0.1s;
+}
+[data-title]:after {
+  content: attr(data-title);
+  background-color: #191919;
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  bottom: -3.6em;
+  left: 100%;
+  white-space: nowrap;
+  opacity: 0;
+  z-index: 99999;
+  visibility: hidden;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  line-height: normal;
+  padding: 5px 10px;
+  padding-bottom: 10px;
+}
+
+[data-title] {
+  position: relative;
+}
+
+.pseudo-tooltip-wrapper {
+  display: inline-block;
+}
+.cart-bg {
+  background-image: url("../assets/wepik-export-20230903005905G70h.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
